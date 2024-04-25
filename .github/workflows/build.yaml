@@ -42,6 +42,11 @@ jobs:
         env:
            DOCKER_CLI_ACI: 1
            
+      - name: Image scan using Trivy
+        run: trivy image sandocker2/tic-tok:latest > trivy_image_scan.txt
+        
+       
+           
         
         
         
