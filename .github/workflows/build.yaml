@@ -24,4 +24,8 @@ jobs:
           
       - name: Install npm dep
         run: npm install
+
+      - name: trivy code scan
+        run: trivy fs . > trivyfs.txt
+        
         
